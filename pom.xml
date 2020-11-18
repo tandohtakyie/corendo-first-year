@@ -64,6 +64,12 @@
         <mainClass>corendo.fys.MainApp</mainClass>
     </properties>
 
+    <properties>
+        <sonar.projectKey>tandohtakyie_corendo-first-year</sonar.projectKey>
+        <sonar.organization>corendo</sonar.organization>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+    </properties>
+
     <organization>
         <!-- Used as the 'Vendor' for JNLP generation -->
         <name>Your Organisation</name>
