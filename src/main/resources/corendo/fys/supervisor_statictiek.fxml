@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="467.0" prefWidth="733.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="corendo.fys.controller.Supervisor_statictiekController">
+   <children>
+      <BorderPane layoutX="110.0" layoutY="26.0" prefHeight="441.0" prefWidth="733.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="26.0">
+         <left>
+            <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXButton onAction="#drieDagen" prefHeight="27.0" prefWidth="92.0" style="-fx-background-color: #556;" text="%driedagen" textFill="#eeeeee" />
+                  <JFXButton onAction="#eenWeek" prefHeight="27.0" prefWidth="92.0" style="-fx-background-color: #556;" text="%eenweek" textFill="WHITE" />
+                  <JFXButton onAction="#eenMaand" prefHeight="27.0" prefWidth="92.0" style="-fx-background-color: #556;" text="%eenmaand" textFill="WHITE" />
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <PieChart fx:id="pieChartEenWeek" visible="false" />
+                  <PieChart fx:id="pieChartDrieDagen" visible="false" />
+                  <PieChart fx:id="pieChartEenMaand" visible="false" />
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="statistiekenLabel" layoutX="6.0" layoutY="316.0" text="Gevonden bagage:" visible="false" />
+                        <Label fx:id="statistiekenLabel2" layoutX="6.0" layoutY="342.0" text="Verloren bagage:" visible="false" />
+                        <Label fx:id="statistiekenLabel3" layoutX="6.0" layoutY="370.0" text="Beschadigde bagage:" visible="false" />
+                        <Label fx:id="aantalGevondenLabel" layoutX="145.0" layoutY="316.0" />
+                        <Label fx:id="aantalVerlorenLabel" layoutX="145.0" layoutY="342.0" />
+                        <Label fx:id="aantalDamagedLabel" layoutX="145.0" layoutY="370.0" />
+                     </children>
+                  </Pane>
+               </children>
+            </StackPane>
+         </center>
+      </BorderPane>
+      <Label fx:id="pieChartName" layoutX="515.0" layoutY="3.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
