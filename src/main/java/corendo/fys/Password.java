@@ -16,7 +16,7 @@ public class Password {
 
     /**
      * Encrypt het wachtwoord met MD5 hash
-     *
+     * Encrypt
      * @return Een random gegenereerd hash wachtwoord
      */
     public String getHashedPassword(String password) {
